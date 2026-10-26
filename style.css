@@ -1,0 +1,74 @@
+:root{
+  --fondo:#0f141b; --panel:#171e28; --panel2:#1d2633; --borde:#2a3546;
+  --texto:#e6ebf2; --suave:#93a1b5; --acento:#66c0f4; --ok:#8fd16a; --peligro:#e5604d;
+  --radio:10px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.barra{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 24px;max-width:1200px;margin:0 auto}
+h1{margin:0;font-size:24px}
+.sub{margin:2px 0 0;color:var(--suave);font-size:13px}
+main{max-width:1200px;margin:0 auto;padding:0 24px 48px}
+
+button{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:9px 16px;background:var(--panel2);color:var(--texto)}
+button:hover{filter:brightness(1.15)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.primario{background:var(--acento);color:#0b1620;font-weight:600}
+.icono{padding:6px 10px;background:transparent;color:var(--suave)}
+.icono:hover{color:var(--texto)}
+
+/* Hoja de cálculo */
+.hoja{background:var(--panel);border:1px solid var(--borde);border-radius:var(--radio);overflow:auto;max-height:calc(100vh - 140px)}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:760px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--borde);vertical-align:middle}
+th{position:sticky;top:0;background:var(--panel2);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--suave);z-index:1;white-space:nowrap}
+th.ordenable{cursor:pointer;user-select:none}
+th.ordenable:hover{color:var(--texto)}
+tbody tr:nth-child(even){background:rgba(255,255,255,.02)}
+tbody tr:hover{background:rgba(102,192,244,.07)}
+td img{width:150px;aspect-ratio:460/215;object-fit:cover;border-radius:6px;display:block;background:var(--panel2)}
+.nombre{font-weight:600}
+.precio{font-variant-numeric:tabular-nums;white-space:nowrap}
+.nota{display:block;color:var(--suave);font-size:12px}
+.oferta{color:var(--ok)}
+.cuando{max-width:300px}
+.acciones{white-space:nowrap;text-align:right}
+.vacio{padding:40px;text-align:center;color:var(--suave)}
+
+/* Modal */
+dialog{background:var(--panel);color:var(--texto);border:1px solid var(--borde);border-radius:14px;padding:20px;width:min(640px,94vw);max-height:88vh;overflow:hidden}
+dialog[open]{display:flex;flex-direction:column;gap:10px}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.modal-cab{display:flex;justify-content:space-between;align-items:center}
+.modal-cab h2{margin:0;font-size:19px}
+#q{width:100%;padding:11px 14px;border-radius:8px;border:1px solid var(--borde);background:var(--fondo);color:var(--texto);font-size:16px}
+#q:focus{outline:2px solid var(--acento);border-color:transparent}
+#resultados{list-style:none;margin:0;padding:0;overflow:auto;flex:1;min-height:60px}
+#resultados li{border-bottom:1px solid var(--borde)}
+#resultados label{display:flex;align-items:center;gap:12px;padding:8px 4px;cursor:pointer}
+#resultados label:hover{background:rgba(102,192,244,.07)}
+#resultados img{width:92px;aspect-ratio:92/43;object-fit:cover;border-radius:4px;background:var(--panel2)}
+#resultados .info{flex:1;min-width:0}
+#resultados .info b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#resultados input{width:18px;height:18px;accent-color:var(--acento)}
+#resultados .ya{opacity:.5;cursor:default}
+.modal-pie{display:flex;justify-content:space-between;align-items:center;padding-top:6px}
+
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--panel2);border:1px solid var(--borde);padding:10px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s;max-width:90vw}
+#toast.ver{opacity:1;transform:translateX(-50%)}
+
+/* Celular: cada fila se vuelve una tarjeta */
+@media (max-width:720px){
+  .barra,main{padding-left:14px;padding-right:14px}
+  .hoja{max-height:none;border:0;background:transparent}
+  table,tbody,tr,td{display:block;min-width:0;width:100%}
+  thead{display:none}
+  tbody tr{background:var(--panel)!important;border:1px solid var(--borde);border-radius:var(--radio);margin-bottom:14px;overflow:hidden}
+  td{border:0;padding:6px 14px}
+  td[data-label]::before{content:attr(data-label);display:block;color:var(--suave);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  td.portada{padding:0}
+  td.portada img{width:100%;border-radius:0}
+  td.portada::before{display:none}
+  .acciones{text-align:left;padding-bottom:12px}
+  .cuando{max-width:none}
+}

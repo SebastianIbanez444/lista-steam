@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi lista de Steam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="barra">
+    <div>
+      <h1>Mi lista de Steam</h1>
+      <p id="resumen" class="sub">Cargando…</p>
+    </div>
+    <button id="btnAbrir" class="primario">+ Añadir juego</button>
+  </header>
+
+  <main>
+    <div class="hoja">
+      <table id="tabla">
+        <thead><tr id="encabezado"></tr></thead>
+        <tbody id="cuerpo"></tbody>
+      </table>
+      <p id="vacio" class="vacio" hidden>Tu lista está vacía. Pulsa «Añadir juego» para empezar.</p>
+    </div>
+  </main>
+
+  <dialog id="modal">
+    <div class="modal-cab">
+      <h2>Añadir juego</h2>
+      <button id="btnCerrar" class="icono" aria-label="Cerrar">✕</button>
+    </div>
+    <input id="q" type="search" placeholder="Escribe el nombre del juego…" autocomplete="off">
+    <p id="estado" class="sub">Escribe al menos 2 letras.</p>
+    <ul id="resultados"></ul>
+    <div class="modal-pie">
+      <span id="contador" class="sub">0 seleccionados</span>
+      <button id="btnAgregar" class="primario" disabled>Agregar seleccionados</button>
+    </div>
+  </dialog>
+
+  <div id="toast" role="status"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

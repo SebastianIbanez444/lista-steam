@@ -1,0 +1,14 @@
+name = "lista-steam"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+GITHUB_REPO = "TU-USUARIO/lista-steam"      # usuario/repositorio donde está la página
+ALLOWED_ORIGIN = "https://TU-USUARIO.github.io"  # origen de tu GitHub Pages (sin / al final)
+DATA_PATH = "juegos.json"
+BRANCH = "main"
+
+# Secretos (se crean con: npx wrangler secret put NOMBRE)
+#   ITAD_KEY      -> API key de IsThereAnyDeal
+#   GITHUB_TOKEN  -> token fine-grained con permiso Contents: Read and write SOLO en este repo
+#   APP_PASSWORD  -> la contraseña que usarás para agregar/quitar juegos
