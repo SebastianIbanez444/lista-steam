@@ -35,6 +35,9 @@ td img{width:150px;aspect-ratio:460/215;object-fit:cover;border-radius:6px;displ
 .acciones{white-space:nowrap;text-align:right}
 .vacio{padding:40px;text-align:center;color:var(--suave)}
 
+.pie{max-width:1200px;margin:0 auto;padding:0 24px 32px;color:var(--suave);font-size:12px}
+.pie a{color:var(--acento)}
+
 /* Modal */
 dialog{background:var(--panel);color:var(--texto);border:1px solid var(--borde);border-radius:14px;padding:20px;width:min(640px,94vw);max-height:88vh;overflow:hidden}
 dialog[open]{display:flex;flex-direction:column;gap:10px}

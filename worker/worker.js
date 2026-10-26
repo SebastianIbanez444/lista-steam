@@ -158,10 +158,12 @@ async function tasaCOP(moneda) {
 // Historial de precios en Steam (IsThereAnyDeal), convertido a COP.
 async function historial(env, appid) {
   if (!env.ITAD_KEY) return null;
-  const l = await (await fetch(`${ITAD}/games/lookup/v1?key=${env.ITAD_KEY}&appid=app/${appid}`)).json();
+  const opts = { headers: { "ITAD-API-Key": env.ITAD_KEY } };
+  const l = await (await fetch(`${ITAD}/games/lookup/v1?appid=${appid}`, opts)).json();
   const id = l?.game?.id;
   if (!id) return null;
-  const h = await (await fetch(`${ITAD}/games/history/v2?key=${env.ITAD_KEY}&id=${id}&country=CO&shops=${STEAM_SHOP}`)).json();
+  // Por defecto la API solo devuelve los últimos 3 meses, por eso se pide desde el año 2000.
+  const h = await (await fetch(`${ITAD}/games/history/v2?id=${id}&country=CO&shops=${STEAM_SHOP}&since=2000-01-01T00:00:00Z`, opts)).json();
   if (!Array.isArray(h)) return null;
 
   const crudos = h
