@@ -348,5 +348,19 @@
     "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
     "agregado": "2026-10-27T16:02:18.236Z",
     "actualizado": "2026-10-27T16:02:18.236Z"
+  },
+  {
+    "appid": 2651280,
+    "nombre": "Marvel's Spider-Man 2",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/header.jpg?t=1763569811",
+    "precioBaseCOP": 219000,
+    "precioActualCOP": 219000,
+    "descuento": 0,
+    "minimoHistoricoCOP": 126808,
+    "minimoFecha": "2026-10-01",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en junio (rebajas de verano) · hubo ofertas ese mes en 2 de 2 años",
+    "agregado": "2026-10-27T19:55:33.828Z",
+    "actualizado": "2026-10-27T19:55:33.828Z"
   }
 ]
