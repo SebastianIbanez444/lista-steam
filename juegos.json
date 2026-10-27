@@ -208,5 +208,33 @@
     "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
     "agregado": "2026-10-27T03:44:35.061Z",
     "actualizado": "2026-10-27T03:44:35.061Z"
+  },
+  {
+    "appid": 1943950,
+    "nombre": "Escape the Backrooms",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1943950/f3dac53a5d3e68a4bb67786872b4693260049b26/header.jpg?t=1792608971",
+    "precioBaseCOP": 23700,
+    "precioActualCOP": 18960,
+    "descuento": 20,
+    "minimoHistoricoCOP": 18960,
+    "minimoFecha": "2024-04-11",
+    "minimoAproximado": true,
+    "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
+    "agregado": "2026-10-27T03:44:52.603Z",
+    "actualizado": "2026-10-27T03:44:52.603Z"
+  },
+  {
+    "appid": 2141730,
+    "nombre": "Backrooms: Escape Together",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2141730/header.jpg?t=1780282746",
+    "precioBaseCOP": 26000,
+    "precioActualCOP": 18200,
+    "descuento": 30,
+    "minimoHistoricoCOP": 12589,
+    "minimoFecha": "2023-03-16",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en marzo (rebajas de primavera) · hubo ofertas ese mes en 1 de 2 años",
+    "agregado": "2026-10-27T03:44:52.486Z",
+    "actualizado": "2026-10-27T03:44:52.486Z"
   }
 ]
