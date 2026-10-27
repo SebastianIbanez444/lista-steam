@@ -236,5 +236,33 @@
     "cuandoComprar": "Probable en marzo (rebajas de primavera) · hubo ofertas ese mes en 1 de 2 años",
     "agregado": "2026-10-27T03:44:52.486Z",
     "actualizado": "2026-10-27T03:44:52.486Z"
+  },
+  {
+    "appid": 976310,
+    "nombre": "Mortal Kombat 11",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/976310/header.jpg?t=1780429525",
+    "precioBaseCOP": 143999,
+    "precioActualCOP": 143999,
+    "descuento": 0,
+    "minimoHistoricoCOP": 7856,
+    "minimoFecha": "2025-09-29",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en octubre · hubo ofertas ese mes en 8 de 8 años",
+    "agregado": "2026-10-27T03:45:27.222Z",
+    "actualizado": "2026-10-27T03:45:27.222Z"
+  },
+  {
+    "appid": 307780,
+    "nombre": "Mortal Kombat X",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/307780/header.jpg?t=1761846088",
+    "precioBaseCOP": 64999,
+    "precioActualCOP": 64999,
+    "descuento": 0,
+    "minimoHistoricoCOP": 12589,
+    "minimoFecha": "2026-10-15",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en octubre · hubo ofertas ese mes en 2 de 2 años",
+    "agregado": "2026-10-27T03:45:27.139Z",
+    "actualizado": "2026-10-27T03:45:27.139Z"
   }
 ]
