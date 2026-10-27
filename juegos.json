@@ -194,5 +194,19 @@
     "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
     "agregado": "2026-10-27T03:44:02.046Z",
     "actualizado": "2026-10-27T03:44:02.046Z"
+  },
+  {
+    "appid": 739630,
+    "nombre": "Phasmophobia",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/6283e4bf96c6e8160492ae12016f0c9a308a75d9/header_alt_assets_13.jpg?t=1791632508",
+    "precioBaseCOP": 47500,
+    "precioActualCOP": 33250,
+    "descuento": 30,
+    "minimoHistoricoCOP": 33098,
+    "minimoFecha": "2024-06-27",
+    "minimoAproximado": true,
+    "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
+    "agregado": "2026-10-27T03:44:35.061Z",
+    "actualizado": "2026-10-27T03:44:35.061Z"
   }
 ]
