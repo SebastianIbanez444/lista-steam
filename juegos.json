@@ -48,11 +48,11 @@
     "precioBaseCOP": 159999,
     "precioActualCOP": 159999,
     "descuento": 0,
-    "minimoHistoricoCOP": null,
-    "minimoFecha": null,
-    "minimoAproximado": false,
-    "cuandoComprar": "Sin datos de historial",
+    "minimoHistoricoCOP": 25210,
+    "minimoFecha": "2026-03-19",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en diciembre (rebajas de invierno) · hubo ofertas ese mes en 2 de 3 años",
     "agregado": "2026-10-27T03:12:33.058Z",
-    "actualizado": "2026-10-27T03:12:33.058Z"
+    "actualizado": "2026-10-27T03:18:21.126Z"
   }
 ]
