@@ -68,5 +68,47 @@
     "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
     "agregado": "2026-10-27T03:40:17.662Z",
     "actualizado": "2026-10-27T03:40:17.662Z"
+  },
+  {
+    "appid": 1304930,
+    "nombre": "The Outlast Trials",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/e3b17cf268afa51334b63124a2fe0aef3f1d136b/header_alt_assets_4.jpg?t=1792554994",
+    "precioBaseCOP": 86000,
+    "precioActualCOP": 25800,
+    "descuento": 70,
+    "minimoHistoricoCOP": 12589,
+    "minimoFecha": "2026-10-01",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en octubre · hubo ofertas ese mes en 4 de 4 años",
+    "agregado": "2026-10-27T03:41:55.679Z",
+    "actualizado": "2026-10-27T03:41:55.679Z"
+  },
+  {
+    "appid": 238320,
+    "nombre": "Outlast",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238320/header.jpg?t=1666817106",
+    "precioBaseCOP": 37500,
+    "precioActualCOP": 3750,
+    "descuento": 90,
+    "minimoHistoricoCOP": 3750,
+    "minimoFecha": "2026-10-26",
+    "minimoAproximado": true,
+    "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
+    "agregado": "2026-10-27T03:41:55.658Z",
+    "actualizado": "2026-10-27T03:41:55.658Z"
+  },
+  {
+    "appid": 414700,
+    "nombre": "Outlast 2",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/header.jpg?t=1618944453",
+    "precioBaseCOP": 47500,
+    "precioActualCOP": 4750,
+    "descuento": 90,
+    "minimoHistoricoCOP": 4750,
+    "minimoFecha": "2026-10-26",
+    "minimoAproximado": true,
+    "cuandoComprar": "Comprar ya: está en su mínimo histórico o muy cerca",
+    "agregado": "2026-10-27T03:41:55.551Z",
+    "actualizado": "2026-10-27T03:41:55.551Z"
   }
 ]
