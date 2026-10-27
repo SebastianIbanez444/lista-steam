@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "appid": 1426210,
+    "nombre": "It Takes Two",
+    "portada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header_spanish.jpg?t=1777395376",
+    "precioBaseCOP": 159999,
+    "precioActualCOP": 159999,
+    "descuento": 0,
+    "minimoHistoricoCOP": 25210,
+    "minimoFecha": "2026-03-19",
+    "minimoAproximado": true,
+    "cuandoComprar": "Probable en diciembre (rebajas de invierno) · hubo ofertas ese mes en 2 de 3 años",
+    "agregado": "2026-10-27T03:37:22.643Z",
+    "actualizado": "2026-10-27T03:37:22.643Z"
+  }
+]
