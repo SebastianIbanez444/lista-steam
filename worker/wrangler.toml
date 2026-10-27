@@ -3,8 +3,8 @@ main = "worker.js"
 compatibility_date = "2025-01-01"
 
 [vars]
-GITHUB_REPO = "TU-USUARIO/lista-steam"      # usuario/repositorio donde está la página
-ALLOWED_ORIGIN = "https://TU-USUARIO.github.io"  # origen de tu GitHub Pages (sin / al final)
+GITHUB_REPO = "SebastianIbanez444/lista-steam"      # usuario/repositorio donde está la página
+ALLOWED_ORIGIN = "https://sebastianibanez444.github.io"  # origen de tu GitHub Pages (sin / al final)
 DATA_PATH = "juegos.json"
 BRANCH = "main"
 

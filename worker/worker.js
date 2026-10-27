@@ -239,10 +239,15 @@ function ghFetch(env, method, body) {
   });
 }
 
+// Texto del error que devuelve GitHub (ayuda a saber qué falló).
+async function motivo(r) {
+  try { return (await r.json()).message || "sin detalle"; } catch { return "sin detalle"; }
+}
+
 async function leerJuegos(env) {
   const r = await ghFetch(env, "GET");
   if (r.status === 404) return { lista: [], sha: null };
-  if (!r.ok) throw new HttpError("No pude leer la lista en GitHub (revisa token y repositorio)", 502);
+  if (!r.ok) throw new HttpError(`GitHub respondió ${r.status}: ${await motivo(r)} (revisa token y repositorio)`, 502);
   const d = await r.json();
   return { lista: JSON.parse(b64dec(d.content) || "[]"), sha: d.sha };
 }
@@ -254,7 +259,7 @@ async function modificar(env, mensaje, cambio) {
     const nueva = await cambio(lista);
     const r = await ghFetch(env, "PUT", { message: mensaje, content: b64enc(JSON.stringify(nueva.lista, null, 2) + "\n"), sha: sha || undefined, branch: env.BRANCH || "main" });
     if (r.ok) return nueva;
-    if (r.status !== 409 && r.status !== 422) throw new HttpError("No pude guardar en GitHub", 502);
+    if (r.status !== 409 && r.status !== 422) throw new HttpError(`No pude guardar en GitHub (${r.status}: ${await motivo(r)})`, 502);
   }
   throw new HttpError("Conflicto al guardar, intenta de nuevo", 409);
 }
